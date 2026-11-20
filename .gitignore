@@ -1,0 +1,8 @@
+.env
+*.env
+*.key
+__pycache__/
+vevn/
+*.log
+config.ini
+state/
