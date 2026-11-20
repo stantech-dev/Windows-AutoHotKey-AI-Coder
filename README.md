@@ -1,4 +1,4 @@
-# AI Coder
+# Windows AutoHotKey AI Coder
 
 A hotkey-triggered AI coding assistant for Windows, built on AutoHotkey v2. It lets you generate, fix, refactor, explain, and test code directly inside your editor, without leaving the keyboard or copy-pasting into a browser tab.
 
@@ -44,8 +44,7 @@ AHK handles capture, prompting, and insertion. All the actual intelligence comes
    - `models` — a comma-separated list, tried in order with automatic fallback (e.g. `openai/gpt-oss-120b,llama-3.3-70b-versatile`). Use `auto` if your endpoint handles routing itself (FreeLLMAPI).
    - `max_input_chars` — selections larger than this are rejected before an API call is made, to avoid wasting a request on something guaranteed to hit a token limit.
 
-4. **Never commit `config.ini`.** It's already in `.gitignore`. Only `config.ini.example` (with a placeholder key) should be tracked.
-5. Run `main.ahk`. A green **H** icon in your system tray means it's active.
+4. Run `main.ahk`. A green **H** icon in your system tray means it's active.
 
 ## Hotkeys
 
@@ -108,6 +107,3 @@ ai-coder/
 - `lib/json.ahk` is from [thqby/ahk2_lib](https://github.com/thqby/ahk2_lib), used under its original license.
 - Model routing/fallback tested against [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi) and [Groq](https://groq.com).
 
-## License
-
-Add your license of choice here.
